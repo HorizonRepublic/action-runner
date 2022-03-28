@@ -1,0 +1,12 @@
+apiVersion: actions.summerwind.dev/v1alpha1
+kind: RunnerDeployment
+metadata:
+  name: runnerdeploy
+  namespace: default
+spec:
+  replicas: 2
+  template:
+    spec:
+      dockerdWithinRunnerContainer: true
+      image: 'ghcr.io/horizonrepublic/action-runner:latest'
+      organization: HorizonRepublic
