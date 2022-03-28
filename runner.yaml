@@ -8,5 +8,5 @@ spec:
   template:
     spec:
       dockerdWithinRunnerContainer: true
-      image: 'ghcr.io/horizonrepublic/action-runner:latest'
+      image: 'ghcr.io/horizonrepublic/action-runner:main'
       organization: HorizonRepublic
