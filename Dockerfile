@@ -12,5 +12,5 @@ RUN sudo apt-get update -y \
 RUN sudo apt-get update -y \
     && sudo apt-get install -y fuse-overlayfs \
     && mkdir -vp ~/.config/containers \
-    && printf "[storage.options]\nmount_program=\"/usr/bin/fuse-overlayfs\"" > ~/.config/containers/storage.conf \
+    && printf "[storage.options]\nmount_program=\"/usr/bin/fuse-overlayfs\"" > /home/runner/.config/containers/storage.conf \
     && sudo rm -rf /var/lib/apt/lists/*
